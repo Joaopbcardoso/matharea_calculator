@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Retângulo - Math Area Calculator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logomath.png"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="formas.html">Formas</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h2>Calcule a área de um retângulo online</h2>
+            <hr>
+            <div style="text-align: center;">
+                <form action="">
+                    <label class="legenda">Digite a medida da base do retângulo:</label>
+                    <input type="number" id="base">
+
+                    <label class="legenda">Digite a medida da altura do retângulo</label>
+                    <input type="number" id="altura">
+                </form>
+                    <button onclick="retanguloArea()" class="enviarlados">Enviar</button>
+                    <h3 id="result">Resultado</h3>
+            </div>
+        </main>
+        <footer>
+            <img src="logomath2.png">
+            <p class="copyright">&copy; Copyright Math Area - 2023</p>
+        </footer>
+        <script src="retangulo.js"></script>
+    </body>
+
+</html>

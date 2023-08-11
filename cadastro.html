@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Math Area Calculator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logomath.png" alt="Logo da Barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="formas.html">Produtos</a></li>
+                        <li><a href="cadastro.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form class="cadastro">
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="seuemail@dominio.com" id="email" class="input-padrao" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required >
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" required></textarea>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"> <input type="radio" value="Email" name="formaContato" id="radio-email">Email</label>
+
+                    <label for="radio-telefone"> <input type="radio" value="Ligação" name="formaContato" id="radio-telefone">Ligação</label>
+
+                    <label for="radio-whatsapp"> <input type="radio" value="WhatsApp" name="formaContato" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por rmail?</label>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+        </main>
+
+        <footer>
+            <img src="logomath2.png" alt="Logo da Math Area">
+            <p class="copyright">&copy; Copyright Math Area - 2023</p>
+        </footer>
+    </body>
+
+</html>
